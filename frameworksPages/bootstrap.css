@@ -47,3 +47,24 @@ body{
     padding-left: 20px;
 
 }
+
+
+.back-btn{
+
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    background-color: black;
+    color:  #7311cf;
+    padding: 10px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+
+}
+
+
+.back-btn:hover{
+    color:  #a200ff;
+}
