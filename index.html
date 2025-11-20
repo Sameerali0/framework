@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Mini Framework Docs</h1>
+    <div id="home">
+        <h1>Mini Framework Docs</h1>
 
-    <div class="frameworks">
-        <a href="#" class="framework">React</a>
-        <a href="#" class="framework">Angular</a>
-        <a href="#" class="framework">Vue.js</a>
-        <a href="#" class="framework">Tailwind</a>
-        <a href="#" class="framework">Bootstrap</a>
+        <div class="frameworks">
+            <a onclick="frameworks('frameworksPages/react.html')" class="framework">React</a>
+            <a onclick="frameworks('frameworksPages/angular.html')" class="framework">Angular</a>
+            <a onclick="frameworks('frameworksPages/vue.html')" class="framework">Vue.js</a>
+            <a onclick="frameworks('frameworksPages/tailwind.html')" class="framework">Tailwind</a>
+            <a onclick="frameworks('frameworksPages/bootstrap.html')" class="framework">Bootstrap</a>
+        </div>
     </div>
+    
 
+    <div id="content"></div>
 
     <script src="script.js"></script>
 </body>
