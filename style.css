@@ -46,3 +46,36 @@ h1{
     height: 60px;
     margin-bottom: 10px;
 }
+
+.react:hover{
+    color: #61dafb;
+
+}
+
+.angular:hover{
+
+    color: #eb068c;
+}
+
+
+.vue:hover {
+
+    color: #41b883;
+}
+
+
+.tailwind:hover{
+
+    color: #38bdf8;
+}
+
+.bootstrap:hover{
+
+    color: #7952b3;
+}
+
+
+.framework:hover .logo{
+
+    filter: drop-shadow(0 0 10px currentColor);
+}
