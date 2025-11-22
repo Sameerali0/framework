@@ -23,7 +23,7 @@ h1{
     margin-top: 10%;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 
 }
 
@@ -37,7 +37,8 @@ h1{
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px;
+    flex-direction: column;
+
 }
 
 .logo{
@@ -86,7 +87,7 @@ h1{
 
     background: #1a1a1a;
     padding: 20px;
-    width: 250px;
+    width: 230px;
     text-align: center;
     border-radius: 12px;
 
@@ -141,7 +142,7 @@ h1{
 
 
 .card-div:nth-child(2) .vote-bar{
-    background: #dd0331;
+    background: #eb068c;
 
 }
 
@@ -163,3 +164,33 @@ h1{
 }
 
 
+.card-div:nth-child(1){
+
+    box-shadow: 0 0 15px #61dafb;
+}
+
+
+
+.card-div:nth-child(2){
+
+
+    box-shadow: 0 0 15px #eb068c;
+}
+
+.card-div:nth-child(3){
+
+    box-shadow: 0 0 15px #41b883;
+
+}
+
+.card-div:nth-child(4){
+
+    box-shadow: 0 0 15px #38bdf8;
+
+}
+
+.card-div:nth-child(5){
+
+    box-shadow: 0 0 15px #7952b3;
+
+}

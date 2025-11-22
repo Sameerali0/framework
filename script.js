@@ -9,11 +9,16 @@ if(!localStorage.getItem("votes")){
     localStorage.setItem("votes", JSON.stringify([0, 0, 0, 0, 0]))
 }
 
+if(!localStorage.getItem("currentVote")){
+
+    localStorage.setItem("currentVote", "-1")
+
+    
+}
+
 
 let votes= JSON.parse(localStorage.getItem("votes"))
-
-
-let hasVoted= localStorage.getItem("hasVoted")
+let currentVote= Number(localStorage.getItem("currentVote"))
 
 
 
@@ -38,16 +43,30 @@ voteBtns.forEach((btn, i) =>{
 
     btn.addEventListener("click", () =>{
 
-        if(hasVoted){
+        if(currentVote == i){
             
-            return
+            votes[i]--
+            currentVote= -1
+
+            localStorage.setItem("currentVote", "-1")
+
         }
 
-        votes[i] += 1
-        localStorage.setItem("votes", JSON.stringify(votes))
+        else{
 
-        localStorage.setItem("hasVoted", "true")
-        hasVoted= true
+            if (currentVote !== -1){
+
+                votes[currentVote]--
+
+            }
+
+                votes[i]++
+                currentVote= i
+                localStorage.setItem("currentVote", i)
+                
+        }
+
+        localStorage.setItem("votes", JSON.stringify(votes))
 
         updateVotes()
 
