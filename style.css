@@ -79,3 +79,36 @@ h1{
 
     filter: drop-shadow(0 0 10px currentColor);
 }
+
+
+
+.vote-div{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.vote-btn{
+
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+
+.vote-bar{
+     width: 200px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 10px;
+
+}
+
+
+.vote-count{
+
+    font-weight: bold;
+}
