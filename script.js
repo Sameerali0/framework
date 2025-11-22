@@ -33,6 +33,27 @@ function updateVotes(){
 
     })
 
+
+    voteBtns.forEach((btn, i) =>{
+
+        let icon= btn.querySelector(".heart-icon")
+
+        if(currentVote === i){
+
+            icon.classList.remove("fa-regular")
+            icon.classList.add("fa-solid")
+
+
+        }else{
+
+            icon.classList.remove("fa-solid")
+
+            icon.classList.add("fa-regular")
+
+        }
+
+
+    })
 }
 
 updateVotes()
@@ -63,6 +84,15 @@ voteBtns.forEach((btn, i) =>{
                 votes[i]++
                 currentVote= i
                 localStorage.setItem("currentVote", i)
+
+                const card= btn.closest(".card-div")
+
+                const popHeart= document.createElement("i")
+                popHeart.className= "fa-sharp fa-solid fa-heart heart-pop"
+                card.appendChild(popHeart)
+
+
+                setTimeout(() => popHeart.remove(), 1000)
                 
         }
 
