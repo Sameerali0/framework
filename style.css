@@ -20,10 +20,10 @@ h1{
 
 .frameworks{
 
-    margin-top: 18%;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
-    gap: 80px;
+    gap: 20px;
 
 }
 
@@ -82,70 +82,82 @@ h1{
 
 
 
-.vote-div{
+.card-div{
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    background: #1a1a1a;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 12px;
 
 }
 
+
 .vote-btn{
 
+    margin-top: 20px;
     padding: 10px 20px;
     cursor: pointer;
     border: none;
+    background: white;
+    color: black;
+    font-weight: bold;
 }
 
 
 .vote-bar-div{
-    width: 200px;
-    height: 20px;
+
+    width: 100%;
+    height: 15px;
     background-color: #333;
     border-radius: 10px;
     overflow: hidden;
+    margin-top: 20px;
 
 }
+
 
 .vote-bar{
 
     height: 100%;
     width: 0%;
     transition: width 0.4s ease;
+
 }
 
 
 .vote-count{
-
+    display: block;
+    margin-top: 15px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 
-.vote-div:nth-child(1) .vote-bar{
+.card-div:nth-child(1) .vote-bar{
 
     background: #61dafb;
 }
 
 
-.vote-div:nth-child(2) .vote-bar{
+.card-div:nth-child(2) .vote-bar{
     background: #dd0331;
 
 }
 
-.vote-div:nth-child(3) .vote-bar{
+.card-div:nth-child(3) .vote-bar{
 
     background: #41b883;
 
 } 
 
-.vote-div:nth-child(4) .vote-bar{
+.card-div:nth-child(4) .vote-bar{
     background: #38bdf8;
 
 }
 
 
-.vote-div:nth-child(5) .vote-bar{
+.card-div:nth-child(5) .vote-bar{
     background: #7952b3;
 
 }
