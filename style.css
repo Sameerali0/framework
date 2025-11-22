@@ -7,7 +7,7 @@
 body{
     background-color: black;
     color: white;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
@@ -99,12 +99,20 @@ h1{
 }
 
 
-.vote-bar{
-     width: 200px;
+.vote-bar-div{
+    width: 200px;
     height: 20px;
     background-color: #333;
     border-radius: 10px;
+    overflow: hidden;
 
+}
+
+.vote-bar{
+
+    height: 100%;
+    width: 0%;
+    transition: width 0.4s ease;
 }
 
 
@@ -112,3 +120,34 @@ h1{
 
     font-weight: bold;
 }
+
+
+.vote-div:nth-child(1) .vote-bar{
+
+    background: #61dafb;
+}
+
+
+.vote-div:nth-child(2) .vote-bar{
+    background: #dd0331;
+
+}
+
+.vote-div:nth-child(3) .vote-bar{
+
+    background: #41b883;
+
+} 
+
+.vote-div:nth-child(4) .vote-bar{
+    background: #38bdf8;
+
+}
+
+
+.vote-div:nth-child(5) .vote-bar{
+    background: #7952b3;
+
+}
+
+
