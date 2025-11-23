@@ -58,3 +58,33 @@ body{
 .back-btn:hover{
     color: #ff0080;
 }
+
+
+.code-example{
+
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    font-family: 'Courier New', monospace;
+    width: 1000px;
+
+}
+
+.code-example h2{
+
+    padding-bottom: 20px;
+}
+
+
+
+.code-example pre{
+
+    overflow-x: auto;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+
+}
