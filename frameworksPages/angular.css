@@ -34,7 +34,13 @@ body{
 
     margin-top: 20px;
     font-size: 20px;
-    padding-left: 20px;
+    padding: 10px;
+    background-color: black;
+    width: 1000px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
 
 }
 
