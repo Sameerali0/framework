@@ -17,5 +17,107 @@
     </div>
 
     <p class="intro">Vue is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS, and JavaScript and provides a declarative, component-based programming model that helps you efficiently develop user interfaces of any complexity.</p>
+
+    <div class="code-example">
+    <h2>Code Example</h2>
+
+<pre><code>
+ &lt;template&gt;
+    &lt;div class="container"&gt;
+
+        &lt;a href="../index.html" class="back-btn"&gt; ← Back &lt;/a&gt;
+
+        &lt;div class="heading"&gt;
+            &lt;div class="logo-div"&gt;
+                &lt;img src="../images/Vue.js.png" class="logo" alt="Vue.js Logo"&gt;
+            &lt;/div&gt;
+            &lt;h1&gt;Vue.js Documentation&lt;/h1&gt;
+        &lt;/div&gt;
+
+        &lt;p class="intro"&gt;
+            Vue is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS, and JavaScript and provides a declarative,
+            component-based programming model that helps you efficiently develop user interfaces of any complexity.
+        &lt;/p&gt;
+
+    &lt;/div&gt;
+ &lt;/template&gt;
+
+ &lt;script&gt;
+
+    export default{
+
+    name: 'VueDocumentation'
+
+    }
+
+ &lt;/script&gt;
+
+ &lt;style scoped&gt;
+    .container{
+        background-color: #0de692d2;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .heading{
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+
+    .logo-div{
+        height: 65px;
+        width: 65px;
+        background-color: black;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 6px;
+    }
+
+    .logo{
+        width: 45px;
+        height: 45px;
+    }
+
+    .intro{
+        margin-top: 20px;
+        font-size: 20px;
+        padding: 10px;
+        background-color: black;
+        margin-right: 30px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        line-height: 1.5;
+    }
+
+    .back-btn{
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        background-color: black;
+        color: #0de692d2;
+        padding: 10px 18px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 30px;
+        text-decoration: none;
+    }
+
+    .back-btn:hover{
+        color: #00ff73;
+    }
+ &lt;/style&gt;
+
+</code></pre>
+
+    </div>
+
+
 </body>
 </html>
