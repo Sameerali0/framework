@@ -45,9 +45,25 @@ body{
 
     margin-top: 20px;
     font-size: 20px;
-    padding-left: 20px;
-    padding-right: 200px;
+    padding: 10px;
+    background-color: black;
+    margin-left: 20px;
+    margin-right: 70px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    line-height: 1.5;
 
+}
+
+.intro-2{
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: black;
+    margin-left: 20px;
+    margin-right: 60%;
+    border-radius: 10px;
 }
 
 
@@ -69,4 +85,33 @@ body{
 
 .back-btn:hover{
     color: #0066ff;
+}
+
+
+.code-example{
+
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    font-family: 'Courier New', monospace;
+    width: auto;
+
+}
+
+.code-example h2{
+
+    padding-bottom: 20px;
+}
+
+
+
+.code-example pre{
+
+    overflow-x: auto;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+
 }
