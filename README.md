@@ -6,3 +6,6 @@ This project is a small frontend frameworks showcase and documentation website. 
 - HTML
 - CSS
 - JavaScript
+
+## Screenshot
+![Mini Frontend Frameworks Docs Screenshot](images/Screenshot.png) 
