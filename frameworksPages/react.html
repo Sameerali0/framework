@@ -17,5 +17,110 @@
     </div>    
 
     <p class="intro">React is a declarative, efficient, and flexible open-source JavaScript library developed by Facebook for building user interfaces. It is primarily used for creating single-page applications and complex interactive web applications with dynamic content.</p>
+
+    <div class="code-example">
+    <h2>React Component Example</h2>
+
+<pre><code>
+ <span style="color: green;"> &lt;!-- ReactDocumentation.jsx --&gt;</span>
+
+  import React from 'react';
+  import './react.css';
+
+  const ReactDocumentation = () =&gt; {
+    return (
+        &lt;div className="container"&gt;
+
+            &lt;a href="../index.html" className="back-btn"&gt; ← Back &lt;/a&gt;
+
+            &lt;div className="heading"&gt;
+                &lt;div className="logo-div"&gt;
+                    &lt;img src="../images/React.png" className="logo" alt="React Logo" /&gt;
+                &lt;/div&gt;
+                &lt;h1&gt;React Documentation&lt;/h1&gt;
+            &lt;/div&gt;
+
+            &lt;p className="intro"&gt;
+                React is a declarative, efficient, and flexible open-source JavaScript library developed by Facebook for building user interfaces. 
+                It is primarily used for creating single-page applications and complex interactive web applications with dynamic content.
+            &lt;/p&gt;
+
+        &lt;/div&gt;
+    );
+  }
+
+  export default ReactDocumentation;
+</code></pre>
+
+<pre><code>
+   <span style="color: green;">&lt;!-- react.css --&gt;</span>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #11cfcf;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .heading{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+
+    .logo-div{
+        height: 60px;
+        width: 60px;
+        background-color: black;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo{
+        width: 45px;
+        height: 45px;
+    }
+
+    .intro{
+        margin-top: 20px;
+        font-size: 20px;
+        padding: 10px;
+        background-color: black;
+        margin-left: 20px;
+        border-radius: 10px;
+        line-height: 1.5;
+        margin-right: 20px;
+    }
+
+    .back-btn{
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        background-color: black;
+        color: #11cfcf;
+        padding: 10px 18px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 30px;
+        text-decoration: none;
+    }
+
+    .back-btn:hover{
+        color: #00aeff;
+    }
+    
+</code></pre>
+
+    </div>
+
 </body>
 </html>
